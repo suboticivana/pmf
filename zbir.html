@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function saberi()
+{
+  var prviBr, drugiBr, zbir;
+  prviBr = parseInt(document.getElementById("prvi").value);
+  drugiBr = parseInt(document.getElementById("drugi").value);
+  zbir = prviBr + drugiBr;
+  document.getElementById("odgovor").value = zbir;
+}
+</script>
+</head>
+<body>
+
+<p>Unesite prvi broj: <input id="prvi"></p>
+<p>Unesite drugi broj: <input id="drugi"></p>
+<button onclick="saberi()">Saberi</button>
+<p>zbir = <input id="odgovor"></p>
+
+</body>
+</html>

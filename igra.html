@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div class="form">
+	<label for="guessField">Unesite broj od 1 do 10: </label>
+	<input type = "text" id = "guessField" class = "guessField">
+	<input type = "submit" value = "OK"
+		class = "guessSubmit" id = "submitguess">
+<script type = "text/javascript">
+	var y = Math.floor(Math.random() * 10 + 1);
+	var guess = 1;
+	
+	document.getElementById("submitguess").onclick = function(){
+        var x = document.getElementById("guessField").value;
+if(x == y)
+   {    
+       alert("Čestitke!!! Pogodili ste u  "
+               + guess + " pogodaka ");
+   }
+   else if(x > y)
+   {    
+       guess++;
+       alert("Probajte manji broj!");
+   }
+   else
+   {
+       guess++;
+       alert("Probajte veći broj!")
+   }
+}
+</script>
+</body>
+</html> 
